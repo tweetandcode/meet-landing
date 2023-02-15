@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Red_Hat_Display } from '@next/font/google'
 
+
 import LineNumber from '../components/linenumber/line_number.jsx';
 import UserImage from '../components/userimage/user_image.jsx';
 
