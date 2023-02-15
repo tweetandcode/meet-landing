@@ -10,3 +10,21 @@
   border-radius: 10px;
   height: 141px;
 }
+
+@media screen and (min-width: 768px) {
+
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+  }
+
+  .main img {
+    height: 156px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main img {
+    height: 242px;
+  }
+}

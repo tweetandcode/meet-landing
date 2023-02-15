@@ -23,8 +23,11 @@ export default function Home() {
         <header>
           <img src="/assets/logo.svg" alt="logo" />
           <section className={styles.hero}>
-            <img src="/assets/desktop/image-hero-left.png" alt="hero" />
-            <img src="/assets/desktop/image-hero-right.png" alt="hero" />
+            <div className={styles.imgContainer}>
+              <img src="/assets/desktop/image-hero-left.png" alt="hero" />
+              <img src="/assets/desktop/image-hero-right.png" alt="hero" />
+            </div>
+            <img className={styles.desktopImage} src="/assets/desktop/image-hero-left.png" alt="hero" />
             <div className={styles.heroContent}>
               <h1 className={styles.title}>Group Chat for Everyone</h1>
               <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
@@ -33,6 +36,8 @@ export default function Home() {
                 <button className={`${styles.button} ${styles.buttonB}`}>What is it?</button>
               </div>
             </div>
+            <img className={styles.desktopImage} src="/assets/desktop/image-hero-right.png" alt="hero" />
+            
           </section>
         </header>
 
@@ -48,6 +53,7 @@ export default function Home() {
         <LineNumber>02</LineNumber>
 
         <section className={styles.footer}>
+          <div></div>
           <h3>Experience more together</h3>
           <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
           <button className={`${styles.button} ${styles.buttonB}`}>Download <span>v1.3</span></button>
